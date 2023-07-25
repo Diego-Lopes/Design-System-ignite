@@ -26,11 +26,12 @@
     "vite": "^4.4.3"
   },
   "dependencies": {
+    "@ignite-ui-diego/eslint-config": "*",
+    "@ignite-ui-diego/ts-config": "*",
+    "@ignite-ui-diego/react": "*",
+    "@ignite-ui-diego/tokens": "*",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@ignite-ui-diego/react":"*",
-    "@ignite-ui-diego/tokens":"*",
-    "@ignite-ui-diego/eslint-config":"*"
-
+    "react-dom": "^18.2.0"
   }
 }
