@@ -10,6 +10,11 @@ export default {
     src: 'https://github.com/diego-lopes.png',
     alt: 'Diego Lopes',
   },
+  argTypes: {
+    src: {
+      type: 'string',
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
