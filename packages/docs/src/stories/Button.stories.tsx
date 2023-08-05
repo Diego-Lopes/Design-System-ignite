@@ -13,11 +13,6 @@ export default {
     size: 'md',
     disabled: false,
   },
-  disabled: {
-    control: {
-      type: 'boolean',
-    },
-  },
   argTypes: {
     variant: {
       options: ['primary', 'secondary', 'tertiary'],
@@ -33,6 +28,11 @@ export default {
     },
     onClick: {
       action: 'click',
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
     },
   },
 } as Meta<ButtonProps>
@@ -60,7 +60,7 @@ export const Withicon: StoryObj<ButtonProps> = {
   args: {
     children: (
       <>
-        Próximo passo
+        Next Step
         <ArrowRight weight="bold" />
       </>
     ),

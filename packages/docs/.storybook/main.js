@@ -1,15 +1,15 @@
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
-  stories: ["../src/pages/**/*.stories.mdx", "../src/stories/**/*.stories.tsx"],
+  stories: [
+    "../src/pages/**/*.stories.mdx",
+    "../src/stories/**/*.stories.tsx"
+  ],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y"
   ],
-  core: {
-    builder: "@storybook/builder-vite",
-  },
   framework: {
     name: "@storybook/react-vite",
     options: {},
@@ -18,7 +18,7 @@ const config = {
     autodocs: "tag",
     defaultName: 'Documentation'
   },
-  viteFinal: (config, {configType}) => {
+  viteFinal: (config, { configType }) => {
     if(configType === 'PRODUCTION') {
       config.base = '/Design-System-ignite/'
     }

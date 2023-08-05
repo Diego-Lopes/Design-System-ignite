@@ -12,7 +12,7 @@ export default {
   },
   argTypes: {
     src: {
-      type: 'string',
+      control: {type: 'text'},
     },
   },
 } as Meta<AvatarProps>

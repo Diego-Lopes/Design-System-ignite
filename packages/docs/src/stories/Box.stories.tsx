@@ -11,7 +11,7 @@ export default {
   },
   argTypes: {
     children: {
-      control: 'disabled',
+      control: { type: null },
     },
   },
 } as Meta<BoxProps>
