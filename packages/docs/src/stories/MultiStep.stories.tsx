@@ -5,7 +5,7 @@ import { Box, MultiStep, MultiStepProps } from '@ignite-ui-diego/react'
 export default {
   title: 'Form/Multi Step',
   component: MultiStep,
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   args: {
     size: 4,
     currentStep: 1,

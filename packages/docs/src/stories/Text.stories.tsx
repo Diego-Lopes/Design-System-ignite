@@ -5,7 +5,7 @@ import { Text, TextProps } from '@ignite-ui-diego/react'
 export default {
   title: 'Typography/Text',
   component: Text,
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   args: {
     size: 'md',
     children:
