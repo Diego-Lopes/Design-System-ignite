@@ -18,6 +18,6 @@ module.exports = {
       config.base = "/Design-System-ignite/";
     }
 
-    return config;
+    return await config;
   },
 };
