@@ -8,11 +8,18 @@ module.exports = {
   ],
   framework: "@storybook/react",
   core: {
-    builder: "@storybook/builder-vite",
+    builder: {
+      name: "@storybook/builder-vite",
+      options: {
+        viteConfigPath: '../vite.config.js'
+      }
+    },
+    disableTelemetry: true,
   },
   features: {
     storyStoreV7: true,
   },
+  
   async viteFinal(config, { configType }) {
     if (configType === "PRODUCTION") {
       config.base = "/Design-System-ignite/";
