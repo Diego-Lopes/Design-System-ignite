@@ -5,7 +5,7 @@ import { Box, BoxProps, Text } from '@ignite-ui-diego/react'
 export default {
   title: 'Surfaces/Box',
   component: Box,
-  // tags: ['autodocs'],
+  tags: ['autodocs'],
   args: {
     children: <Text>Testando o elemento box</Text>,
   },

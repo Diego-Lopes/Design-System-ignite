@@ -5,7 +5,7 @@ import { Box, Text, Checkbox, CheckboxProps } from '@ignite-ui-diego/react'
 export default {
   title: 'Form/Checkbox',
   component: Checkbox,
-  // tags: ['autodocs'],
+  tags: ['autodocs'],
   decorators: [
     (Story) => {
       return (

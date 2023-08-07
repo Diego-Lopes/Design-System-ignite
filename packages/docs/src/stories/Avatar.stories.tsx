@@ -5,7 +5,7 @@ import { Avatar, AvatarProps } from '@ignite-ui-diego/react'
 export default {
   title: 'Data display/Avatar',
   component: Avatar,
-  // tags: ['autodocs'],
+  tags: ['autodocs'],
   args: {
     src: 'https://github.com/diego-lopes.png',
     alt: 'Diego Lopes',
