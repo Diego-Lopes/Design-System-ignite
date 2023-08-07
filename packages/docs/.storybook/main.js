@@ -1,4 +1,5 @@
-module.exports = {
+/** @type { import('@storybook/react-vite').StorybookConfig } */
+const config = {
   stories: ["../src/pages/**/*.stories.mdx", "../src/stories/**/*.stories.tsx"],
   addons: [
     "@storybook/addon-links",
@@ -6,25 +7,18 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
   ],
-  framework: "@storybook/react",
-  core: {
-    builder: {
-      name: "@storybook/builder-vite",
-      options: {
-        viteConfigPath: './vite.config.js'
-      }
-    },
-    disableTelemetry: true,
+  framework: {
+    name: "@storybook/react-vite",
+    options: {},
   },
-  features: {
-    storyStoreV7: true,
+  docs: {
+    autodocs: "tag",
   },
-  
-  async viteFinal(config, { configType }) {
+  viteFinal: (config, { configType }) => {
     if (configType === "PRODUCTION") {
       config.base = "/Design-System-ignite/";
     }
-
-    return await config;
+    return config;
   },
 };
+export default config;
