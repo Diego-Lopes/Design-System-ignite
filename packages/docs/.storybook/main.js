@@ -11,7 +11,7 @@ module.exports = {
     builder: {
       name: "@storybook/builder-vite",
       options: {
-        viteConfigPath: '../vite.config.js'
+        viteConfigPath: './vite.config.js'
       }
     },
     disableTelemetry: true,
